@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(221, 221, 221);
+}
+
+h1 {
+    font-weight:400;
+}
+
+.carres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.carre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(134, 134, 134);
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    color: rgb(255, 255, 255); /* ou white */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.carre .icon {
+    transform: translateY(7px);
+    transition: 0.5s;
+}
+
+.carre .text {
+    font-size: 8px;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: .7s;
+}
+
+.active {
+    transform: scale(1.6) rotate(360deg); 
+    border-radius: 0;
+}
+
+.active .icon {
+    transform: translateY(0px)
+}
+
+.active .text {
+    transform: scale(1);
+}
+
+.active.fb { background: #3B5998; }
+.active.insta { background: #E1306C; }
+.active.tw { background: #1DA1F2; }
